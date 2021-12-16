@@ -1,0 +1,229 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  font-family: 'Sora', sans-serif;
+}
+
+/* settings button */
+.moredatabutton, .settingsbutton {
+  z-index: 101;
+}
+
+/* more data nav */
+.moredatanavigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background:rgba(0, 0, 0, 0.48);
+  width: 295px;
+  overflow: hidden;
+  color: white;
+  z-index: 100;
+  transform: translateX(100%);
+  padding-top: 3.95rem;
+  text-shadow: 2.2px 2.2px 1.1px #000000;
+  padding-right: 0.1rem;
+  right: 0;
+}
+
+/* nav */
+.navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background:rgba(0, 0, 0, 0.48);
+  width: 295px;
+  overflow: hidden;
+  color: white;
+  z-index: 100;
+  transform: translateX(-100%);
+  padding-top: 3.7rem;
+  text-shadow: 2.2px 2.2px 1.1px #000000;
+  padding-left: 0.1rem;
+}
+
+form {
+  margin-top: 1rem; 
+}
+
+.button {
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 2.5px 2.5px #000000;
+  margin-left: 1rem;
+}
+
+.dayofweek, .dayofyear, .dayofmonth, .weekofyear {
+  margin-left: 0.5rem;
+  padding-bottom: 1.15rem;
+}
+
+.bg {
+  display: block;
+  width: auto;
+  height: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.1rem;
+  color: white;
+  text-shadow: 2.5px 2.5px #000000;
+  padding-bottom: 10rem;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  color: white;
+  text-shadow: 5px 5px #000000;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.settings {
+  position: absolute;
+  height: 3rem;
+  padding: 0.6rem;
+  cursor:pointer;
+}
+
+button {
+  position: absolute;
+  background: none;
+  border: none;
+}
+
+.moredatabutton, .start {
+  display: inline-block;
+  padding: 1px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  font-family: 'Sora', sans-serif;
+  text-shadow: 2px 2px #000000;
+  background-color: rgb(177, 177, 177);
+}
+
+.moredatabutton {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  right: 0;
+}
+
+.moredatabutton:active, .moredatabutton:active {
+  background-color: rgb(143, 143, 143);
+  transform: translateY(4px);
+}
+
+.settingsbutton:active, .settingsbutton:active {
+  transform: translateY(4px);
+  filter: brightness(80%);
+}
+
+.showNav {
+  transform: translateX(0);
+}
+
+@media (max-height: 250px) {
+  .clock {
+    font-size: 5.1rem;
+  }
+  .greeting {
+    font-size: 1.5rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .clock {
+    font-size: 5.1rem;
+  }
+  .greeting {
+    font-size: 1.5rem;
+    padding-bottom: 7rem;
+  }
+  .navigation {
+    width: 10rem;
+  }
+  .moredatanavigation {
+    width: 10rem;
+  }
+}

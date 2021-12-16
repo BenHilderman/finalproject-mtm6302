@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MTM6302-FINAL-PROJECT</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- import font -->
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500&display=swap');
+      </style>
+   </head>
+   <body>
+      <div class="container" id="container"></div>
+      <!-- hamburger button -->
+      <button id="settingsbutton" class="settingsbutton">
+      <img src="/images/settings-icon.png" class="settings">
+      </button>
+      <button id="moredatabutton" class="moredatabutton">More Data</button>
+      <div id="greeting" class="greeting"></div>
+      <div id="clock" class="clock"></div>
+      <img class="bg" id="bg">
+      </main>
+      <nav class="moredatanavigation" id="moredatanavigation">
+      <form>
+         <div class="dayofweek" id="dayofweek">
+         </div>
+         <div class="dayofmonth" id="dayofmonth"></div>
+         <div class="dayofyear" id="dayofyear">
+         </div>
+         <div class="weekofyear" id="weekofyear">
+         </div>
+      </form>
+   </nav>
+      <nav class="navigation" id="navigation">
+         <!-- nav section links -->
+         <form>
+         <form class="clockform" name="clockform">
+            <input type="radio" id="clocktwelve" name="clock" class="clocktype" checked="checked"> 12 Hour Clock
+            <input type="radio" id="clocktwentyfour" name="clock" class="clocktype"> 24 Hour Clock 
+         </form>
+         <form name="secondsform">
+            <input type="radio" id="secondsOn" name="seconds" class="secondsbutton" checked="checked"> Show Seconds
+            <input type="radio" id="secondsOff" name="seconds" class="secondsbutton"> Hide Seconds
+         </form>
+         <!-- <div>
+            <button type="button" class="save" id="save">Save</button>
+            </div> -->
+      </nav>
+      </form>
+      <p></p>
+      <ul>
+      </ul>
+      <script src='script.js'></script>
+   </body>
+</html>
